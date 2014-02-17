@@ -1,0 +1,11 @@
+{
+    "name": "dwd-server-spring-2014",
+    "description": "DWD at ITP",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": ">= 3.4.0",
+        "express3-handlebars": ">= 0.5.0",
+        "hbs":"*",
+    }
+}
