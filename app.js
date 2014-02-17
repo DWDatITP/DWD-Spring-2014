@@ -18,7 +18,11 @@ var appPort = 3000;
 app.get('/', function(req, res) {
   res.render('index', {
     title: 'DWD at ITP',
-    description: 'Dynamic Web Development &mdash; Spring 2014'
+    description: 'Dynamic Web Development &mdash; Spring 2014',
+    instructors: [
+      {firstName: "Cory", lastName: "Forsyth", email: ''},
+      {firstName: "Mike", lastName: "Dory", email: 'mike@dory.me'},
+  ]
   });
 });
  
