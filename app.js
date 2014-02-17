@@ -8,6 +8,7 @@ var hbs = require('hbs');
 
 // tell the app to rock the handlebars action
 app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
 app.engine('html', hbs.__express);
 
 // define env variables
@@ -15,7 +16,10 @@ var appPort = 3000;
 
 // define us some routes
 app.get('/', function(req, res) {
-  res.sendfile('./views/index.html');
+  res.render('index', {
+    title: 'DWD at ITP',
+    description: 'Dynamic Web Development &mdash; Spring 2014'
+  });
 });
  
 // ready, set, rocket 
