@@ -8,7 +8,7 @@ var hbs = require('hbs');
 
 // tell the app to rock the handlebars action
 app.set('view engine', 'html');
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/templates');
 app.engine('html', hbs.__express);
 
 // define env variables
