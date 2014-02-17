@@ -1,3 +1,9 @@
-INTERNET LOL.
+<h1>{{title}}</h1>
 
-{{{title}}}
+<h2>{{{description}}}</h2>
+
+<ul>
+{{#each instructors}}
+    <li><a href="mailto:{{email}}">{{firstName}} {{lastName}}</a></li>
+{{/each}}
+</ul>
