@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{{ description }}}">
-    <title>{{ title }}</title>
+    <meta name="description" content="{{{ pageDescription }}}">
+    <title>{{ pageTitle }}</title>
     <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"> -->
   
     <!--[if lte IE 8]>
@@ -28,7 +28,7 @@
 
         <div id="menu">
             <div class="pure-menu pure-menu-open">
-                <a class="pure-menu-heading" href="#">DWD at ITP</a>
+                <a class="pure-menu-heading" href="#">{{ sidebarTitle }}</a>
 
                 <ul>
                     <li class="menu-item-divided pure-menu-selected">
@@ -52,10 +52,28 @@
                     Details would go here and stuff.
                 </p>
 
+                <ul class="instructors">
+                Instructors:
+                {{#each instructors}}
+                    <li><a href="mailto:{{email}}">{{firstName}} {{lastName}}</a></li>
+                {{/each}}
+                </ul>
+
                 <h2 class="content-subhead">Class rules</h2>
                 <p>
                     Class rules would go here as well.
                 </p>
+
+                <h2 class="content-subhead">Classes</h2>
+                {{#each classes}}
+                    <h3>{{ name }}</h3>
+
+                    <ul class="links">
+                    {{#each links}}
+                        <li><a href="{{ href }}">{{ title }}</a></li>
+                    {{/each}}
+                    </ul>
+                {{/each}}
 
             </div>
         </div>
