@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
     instructors: [
       {firstName: "Cory", lastName: "Forsyth", email: ''},
       {firstName: "Mike", lastName: "Dory", email: 'mike@dory.me'},
-  ]
+    ]
   });
 });
  
