@@ -17,11 +17,23 @@ var appPort = 3000;
 // define us some routes
 app.get('/', function(req, res) {
   res.render('index', {
-    title: 'DWD at ITP',
-    description: 'Dynamic Web Development &mdash; Spring 2014',
+    pageTitle: 'DWD at ITP',
+    pageDescription: 'Dynamic Web Development &mdash; Spring 2014',
+    sidebarTitle: 'DWD @ ITP',
     instructors: [
       {firstName: "Cory", lastName: "Forsyth", email: ''},
       {firstName: "Mike", lastName: "Dory", email: 'mike@dory.me'},
+    ],
+    classes: [
+      {
+        name: "Class 1 - Intro",
+        links: [
+          {
+            title: "Gettings Started with Node.js on Heroku",
+            href: "https://devcenter.heroku.com/articles/getting-started-with-nodejs"
+          }
+        ]
+      }
     ]
   });
 });
