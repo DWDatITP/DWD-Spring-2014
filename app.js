@@ -6,10 +6,14 @@ var app = express();
 // handlebars
 var hbs = require('hbs');
 
+// tell the app where our views and static things live
+app.set('views', __dirname + '/templates');
+app.use(express.static(__dirname + '/public'));
+
 // tell the app to rock the handlebars action
 app.set('view engine', 'html');
-app.set('views', __dirname + '/templates');
 app.engine('html', hbs.__express);
+
 
 // define env variables
 var appPort = 3000;
