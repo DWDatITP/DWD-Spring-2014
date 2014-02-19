@@ -14,6 +14,8 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'html');
 app.engine('html', hbs.__express);
 
+// shiny shiny logger
+app.use(express.logger('dev'));
 
 // define env variables
 var appPort = 3000;
