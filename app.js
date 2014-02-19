@@ -7,7 +7,7 @@ var app = express();
 var hbs = require('hbs');
 
 // tell the app where our views and static things live
-app.set('views', __dirname + '/templates');
+app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 // tell the app to rock the handlebars action
