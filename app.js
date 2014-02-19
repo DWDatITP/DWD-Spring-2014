@@ -18,7 +18,7 @@ app.engine('html', hbs.__express);
 app.use(express.logger('dev'));
 
 // define env variables
-var appPort = 3000;
+app.set('port', process.env.PORT || 3000);
 
 // fill out the copy for the page
 var bodyCopy = {
@@ -48,5 +48,5 @@ app.get('/', function(req, res) {
 });
  
 // ready, set, rocket 
-app.listen(appPort);
-console.log('firing up on port %d', appPort);
+app.listen(app.get('port'));
+console.log('firing up on port %d', app.get('port'));
