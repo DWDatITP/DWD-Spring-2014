@@ -50,7 +50,7 @@
             <div class="content">
                 <h2 class="content-subhead">Dynamic Web Development at ITP &mdash; Spring 2014</h2>
                 <p>
-                    Details would go here and stuff.
+                    {{{ classDescription }}}
                 </p>
 
                 <ul class="instructors">
@@ -67,8 +67,8 @@
 
                 <h2 id="schedule" class="content-subhead">Schedule</h2>
                 {{#each classes}}
-                    <h3>{{ name }}</h3>
-
+                    <h3>{{ title }}</h3>
+                    <p>{{ description }}</p>
                     <ul class="links">
                     {{#each links}}
                         <li><a href="{{ href }}">{{ title }}</a></li>
