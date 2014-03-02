@@ -1,15 +1,16 @@
 
 /**
- * The main app!
- * Contains structure for the page as well as data
+ * app.js
+ * Contains structure for the main app
  */
 
 // require all the things
 var express = require('express');
-var app = express();
-
-// handlebars
 var hbs = require('hbs');
+var classData = require('./classData.js');
+
+// app = express
+var app = express();
 
 // tell the app where our views and static things live
 app.set('views', __dirname + '/views');
