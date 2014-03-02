@@ -34,4 +34,3 @@ app.get('/', function(req, res) {
 // ready, set, rocket
 app.listen(app.get('port'));
 console.log('firing up on port %d', app.get('port'));
-console.log(classData.main());
