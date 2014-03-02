@@ -1,7 +1,12 @@
+
+/**
+ * The main app!
+ * Contains structure for the page as well as data
+ */
+
 // require all the things
 var express = require('express');
 var app = express();
-// var reload = require('reload');
 
 // handlebars
 var hbs = require('hbs');
@@ -23,7 +28,7 @@ app.set('port', process.env.PORT || 3000);
 // fill out the copy for the page
 var bodyCopy = {
   pageTitle: 'DWD at ITP',
-  pageDescription: 'Dynamic Web Development &mdash; Spring 2014',
+  pageDescription: 'Dynamic Web Development (Server) &mdash; Spring 2014',
   sidebarTitle: 'DWD @ ITP',
   instructors: [
     {firstName: "Cory", lastName: "Forsyth", email: ''},
@@ -46,7 +51,7 @@ var bodyCopy = {
 app.get('/', function(req, res) {
   res.render('index', bodyCopy);
 });
- 
-// ready, set, rocket 
+
+// ready, set, rocket
 app.listen(app.get('port'));
 console.log('firing up on port %d', app.get('port'));
