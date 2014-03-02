@@ -7,5 +7,6 @@
         "express": ">= 3.4.0",
         "express3-handlebars": ">= 0.5.0",
         "hbs":"*",
+        "supervisor": "*"
     }
 }
