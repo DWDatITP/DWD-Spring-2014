@@ -24,6 +24,16 @@ module.exports = {
       ],
       classes: [
         {
+          title: "Before the first class",
+          description: "",
+          links: [
+            {
+              title: '',
+              href: ''
+            }
+          ]
+        },
+        {
           title: "Class 1 - Intro",
           description: "BOOOO",
           links: [
