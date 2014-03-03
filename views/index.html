@@ -65,13 +65,13 @@
                     Class rules would go here as well.
                 </p>
 
-                <h2 id="schedule" class="content-subhead">Schedule</h2>
+                <h2 id="schedule" class="content-subhead">Week by week</h2>
                 {{#each classes}}
-                    <h3>{{ title }}</h3>
+                    <h3><a href="{{ href }}">{{ title }}</a></h3>
                     <p>{{ description }}</p>
                     <ul class="links">
                     {{#each links}}
-                        <li><a href="{{ href }}">{{ title }}</a></li>
+                        <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
                     {{/each}}
                     </ul>
                 {{/each}}
