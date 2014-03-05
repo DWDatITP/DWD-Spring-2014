@@ -17,7 +17,7 @@ module.exports = {
         '<p>This course will be focused on developing and deploying server side web applications using JavaScript, Node.js with the Express framework, and NoSQL databases on cloud based infrastructure.  Additional topics will include login and session management, web services and APIs, and will lightly touch on front-end web development.</p>' +
         '<p>Prerequisites include Comm Lab Web and Introduction to Computational Media.</p>',
       instructors: [
-        {firstName: "Cory", lastName: "Forsyth", email: ''},
+        {firstName: "Cory", lastName: "Forsyth", email: 'cory.forsyth@gmail.com'},
         {firstName: "Mike", lastName: "Dory", email: 'mike@dory.me'},
       ],
       classes: [
