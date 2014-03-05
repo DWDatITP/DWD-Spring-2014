@@ -71,9 +71,16 @@
                     <p class="date">{{ date }}</p>
                     <p class="description">{{ description }}</p>
                     <ul class="links">
-                    {{#each links}}
+                        Links:
+                        {{#each links}}
                         <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
-                    {{/each}}
+                        {{/each}}
+                    </ul>
+                    <ul class="assignments">
+                        Assignments:
+                        {{#each assignments}}
+                        <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
+                        {{/each}}
                     </ul>
                 {{/each}}
 
