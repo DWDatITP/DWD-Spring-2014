@@ -42,14 +42,82 @@ module.exports = {
         },
         {
           title: "Class 1 - Intro",
-          description: "BOOOO",
+          description: "Getting things started",
+          date: "",
           links: [
             {
               title: "Gettings Started with Node.js on Heroku",
               href: "https://devcenter.heroku.com/articles/getting-started-with-nodejs"
             }
           ]
+        },
+        {
+          title: "Class 2 - ",
+          description: "",
+          date: "",
+          links: [
+            {
+              title: "",
+              href: ""
+            }
+          ]
+        },
+        {
+          title: "Class 3 - ",
+          description: "",
+          date: "",
+          links: [
+            {
+              title: "",
+              href: ""
+            }
+          ]
+        },
+        {
+          title: "Class 4 - ",
+          description: "",
+          date: "",
+          links: [
+            {
+              title: "",
+              href: ""
+            }
+          ]
+        },
+        {
+          title: "Class 5 - ",
+          description: "",
+          date: "",
+          links: [
+            {
+              title: "",
+              href: ""
+            }
+          ]
+        },
+        {
+          title: "Class 6 - ",
+          description: "",
+          date: "",
+          links: [
+            {
+              title: "",
+              href: ""
+            }
+          ]
+        },
+        {
+          title: "Class 7 - ",
+          description: "",
+          date: "",
+          links: [
+            {
+              title: "",
+              href: ""
+            }
+          ]
         }
+
       ]
     };
 
