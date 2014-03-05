@@ -70,17 +70,17 @@
                     <h3><a href="{{ href }}">{{ title }}</a></h3>
                     <p class="date">{{ date }}</p>
                     <p class="description">{{ description }}</p>
+                    <h3>Links:</h3>
                     <ul class="links">
-                        Links:
-                        {{#each links}}
+                    {{#each links}}
                         <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
-                        {{/each}}
+                    {{/each}}
                     </ul>
+                    <h3>Assignments:</h3>
                     <ul class="assignments">
-                        Assignments:
-                        {{#each assignments}}
+                    {{#each assignments}}
                         <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
-                        {{/each}}
+                    {{/each}}
                     </ul>
                 {{/each}}
 

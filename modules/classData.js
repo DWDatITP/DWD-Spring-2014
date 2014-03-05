@@ -26,9 +26,9 @@ module.exports = {
           description: "",
           links: [
             {
-              title: '',
+              title: 'do something',
               href: '',
-              description: ''
+              description: 'but make it really awesome'
             }
           ],
           assignments: [
