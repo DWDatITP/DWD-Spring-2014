@@ -60,6 +60,13 @@ module.exports = {
               title: "",
               href: ""
             }
+          ],
+          assignments: [
+            {
+              title: '',
+              href: '',
+              description: ''
+            }
           ]
         },
         {
@@ -70,6 +77,13 @@ module.exports = {
             {
               title: "",
               href: ""
+            }
+          ],
+          assignments: [
+            {
+              title: '',
+              href: '',
+              description: ''
             }
           ]
         },
@@ -82,6 +96,13 @@ module.exports = {
               title: "",
               href: ""
             }
+          ],
+          assignments: [
+            {
+              title: '',
+              href: '',
+              description: ''
+            }
           ]
         },
         {
@@ -92,6 +113,13 @@ module.exports = {
             {
               title: "",
               href: ""
+            }
+          ],
+          assignments: [
+            {
+              title: '',
+              href: '',
+              description: ''
             }
           ]
         },
@@ -104,6 +132,13 @@ module.exports = {
               title: "",
               href: ""
             }
+          ],
+          assignments: [
+            {
+              title: '',
+              href: '',
+              description: ''
+            }
           ]
         },
         {
@@ -114,6 +149,13 @@ module.exports = {
             {
               title: "",
               href: ""
+            }
+          ],
+          assignments: [
+            {
+              title: '',
+              href: '',
+              description: ''
             }
           ]
         }
