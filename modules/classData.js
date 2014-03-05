@@ -42,8 +42,8 @@ module.exports = {
         },
         {
           title: "Class 1 - Intro",
-          description: "Getting things started",
           date: "",
+          description: "Getting things started",
           links: [
             {
               title: "Gettings Started with Node.js on Heroku",
@@ -53,8 +53,8 @@ module.exports = {
         },
         {
           title: "Class 2 - ",
-          description: "",
           date: "",
+          description: "",
           links: [
             {
               title: "",
@@ -64,8 +64,8 @@ module.exports = {
         },
         {
           title: "Class 3 - ",
-          description: "",
           date: "",
+          description: "",
           links: [
             {
               title: "",
@@ -75,8 +75,8 @@ module.exports = {
         },
         {
           title: "Class 4 - ",
-          description: "",
           date: "",
+          description: "",
           links: [
             {
               title: "",
@@ -86,8 +86,8 @@ module.exports = {
         },
         {
           title: "Class 5 - ",
-          description: "",
           date: "",
+          description: "",
           links: [
             {
               title: "",
@@ -97,8 +97,8 @@ module.exports = {
         },
         {
           title: "Class 6 - ",
-          description: "",
           date: "",
+          description: "",
           links: [
             {
               title: "",
@@ -108,8 +108,8 @@ module.exports = {
         },
         {
           title: "Class 7 - ",
-          description: "",
           date: "",
+          description: "",
           links: [
             {
               title: "",
@@ -117,8 +117,7 @@ module.exports = {
             }
           ]
         }
-
-      ]
+      ] // end classes array
     };
 
     return text;
