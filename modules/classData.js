@@ -20,6 +20,10 @@ module.exports = {
         {firstName: "Cory", lastName: "Forsyth", email: 'cory.forsyth@gmail.com'},
         {firstName: "Mike", lastName: "Dory", email: 'mike@dory.me'},
       ],
+      references: [
+        {title: "Node.js In Action", author: "", href: ""},
+        {title: "What Is Node?", author: "", href: ""}
+      ],
       classes: [
         {
           title: "Before the first class",
