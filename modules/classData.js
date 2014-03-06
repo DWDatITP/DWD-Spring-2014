@@ -21,8 +21,8 @@ module.exports = {
         {firstName: "Mike", lastName: "Dory", email: 'mike@dory.me'},
       ],
       references: [
-        {title: "Node.js In Action", author: "", href: ""},
-        {title: "What Is Node?", author: "", href: ""}
+        {title: "Node.js In Action", author: "", href: "", description: "The guts of Node vs. other modern languages."},
+        {title: "What Is Node?", author: "", href: "", description: "A great deep-dive with wonderful examples."}
       ],
       classes: [
         {

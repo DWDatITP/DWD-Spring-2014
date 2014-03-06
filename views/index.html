@@ -56,7 +56,14 @@
                 <ul class="instructors">
                 Instructors:
                 {{#each instructors}}
-                    <li><a href="mailto:{{email}}">{{firstName}} {{lastName}}</a></li>
+                    <li><a href="mailto:{{ email }}">{{ firstName }} {{ lastName }}</a></li>
+                {{/each}}
+                </ul>
+
+                <ul class="references">
+                References:
+                {{#each references}}
+                    <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
                 {{/each}}
                 </ul>
 
