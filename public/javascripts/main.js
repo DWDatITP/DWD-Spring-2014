@@ -2,7 +2,11 @@ $( document ).ready(function() {
 
   // make sure the browser supports onhashchange
   if (!("onhashchange" in window)) {
-    // I do not have support for IE in this,
+    // on first load, and on each hash change, run the check
+    updateClassesByHash(location.hash);
+    window.onhashchange = locationHashChanged;
+  } else {
+    // I do not have support for IE old in this,
     // so I've kind of got nothing here. Welp.
   }
 
@@ -21,17 +25,13 @@ $( document ).ready(function() {
     // try to match all known 
     if (newHash === '') {
       $('#menu #nav-item-home').addClass(classes);
-    }
-    else if (newHash === '#instructors') {
+    } else if (newHash === '#instructors') {
       $('#menu #nav-item-instructors').addClass(classes);
-    }
-    else if (newHash === '#schedule') {
+    } else if (newHash === '#schedule') {
       $('#menu #nav-item-schedule').addClass(classes);
     }
   
   }
 
-  // on first load, and on each hash change, run the check
-  updateClassesByHash(location.hash);
-  window.onhashchange = locationHashChanged;
+
 });
