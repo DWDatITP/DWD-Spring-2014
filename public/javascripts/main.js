@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   // make sure the browser supports onhashchange
-  if (!("onhashchange" in window)) {
+  if ("onhashchange" in window) {
     // on first load, and on each hash change, run the check
     updateClassesByHash(location.hash);
     window.onhashchange = locationHashChanged;
