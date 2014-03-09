@@ -9,9 +9,9 @@ var express = require('express'),
   hbs = require('hbs'),
   jsonfile = require('jsonfile');
 
-var classDataFile = __dirname + '/lib/classData.json';
+// load up the class data
+var classDataFile = __dirname + '/data/classData.json';
 var classData = jsonfile.readFileSync(classDataFile);
-  // classData = require('./lib/classData.js');
 
 // app = express
 var app = express();
