@@ -5,9 +5,9 @@
  */
 
 // require all the things
-var express = require('express');
-var hbs = require('hbs');
-var classData = require('./lib/classData.js');
+var express = require('express'),
+  hbs = require('hbs'),
+  classData = require('./lib/classData.js');
 
 // app = express
 var app = express();
