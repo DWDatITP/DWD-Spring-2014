@@ -7,7 +7,11 @@
 // require all the things
 var express = require('express'),
   hbs = require('hbs'),
-  classData = require('./lib/classData.js');
+  jsonfile = require('jsonfile');
+
+var classDataFile = __dirname + '/lib/classData.json';
+var classData = jsonfile.readFileSync(classDataFile);
+  // classData = require('./lib/classData.js');
 
 // app = express
 var app = express();
@@ -28,7 +32,7 @@ app.set('port', process.env.PORT || 3000);
 
 // define us some routes
 app.get('/', function(req, res) {
-  res.render('index', classData.main());
+  res.render('index', classData);
 });
 
 // ready, set, rocket
