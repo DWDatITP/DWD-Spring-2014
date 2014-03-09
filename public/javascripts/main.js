@@ -31,10 +31,6 @@ $( document ).ready(function() {
   
   }
 
-  if (location.hash === "#somecoolfeature") {
-      console.log(location.hash);
-  }
-
   // on first load, and on each hash change, run the check
   updateClassesByHash(location.hash);
   window.onhashchange = locationHashChanged;
