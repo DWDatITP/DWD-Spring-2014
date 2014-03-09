@@ -31,11 +31,15 @@ Supervisor will whine about not being installed globally, so if you'd rather to 
 
 ### Running the application
 
-To launch the app, simply run:
+To start the app with npm/Supervisor (enabling fancy auto-reload action and all that), just run this:
+
+    npm start
+
+If you'd rather just run the server, you can 
 
     node app.js
 
-To start the app with Supervisor (enabling fancy auto-reload action and all that), do this instead:
+To start the app with Supervisor by hand, do this instead:
 
     ./node_modules/.bin/supervisor app.js
 

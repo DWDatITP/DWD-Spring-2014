@@ -7,7 +7,7 @@
 // require all the things
 var express = require('express');
 var hbs = require('hbs');
-var classData = require('./classData.js');
+var classData = require('./lib/classData.js');
 
 // app = express
 var app = express();

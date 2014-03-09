@@ -7,14 +7,14 @@
     <title>{{ pageTitle }}</title>
 
     <link rel="stylesheet" href="/stylesheets/vendor/purecss/pure-min.css">
-  
+
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="/stylesheets/vendor/purecss/side-menu-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="/stylesheets/vendor/purecss/side-menu.css">
     <!--<![endif]-->
-        
+
     <!--[if lt IE 9]>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
     <![endif]-->
@@ -35,8 +35,8 @@
                     <li class="menu-item-divided pure-menu-selected">
                         <a href="#">Home</a>
                     </li>
-                    <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#">Instructors</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
                 </ul>
             </div>
         </div>
@@ -56,22 +56,37 @@
                 <ul class="instructors">
                 Instructors:
                 {{#each instructors}}
-                    <li><a href="mailto:{{email}}">{{firstName}} {{lastName}}</a></li>
+                    <li><a href="mailto:{{ email }}">{{ firstName }} {{ lastName }}</a></li>
+                {{/each}}
+                </ul>
+
+                <ul class="references">
+                References:
+                {{#each references}}
+                    <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
                 {{/each}}
                 </ul>
 
                 <h2 class="content-subhead">Class rules</h2>
                 <p>
-                    Class rules would go here as well.
+                    Be on time. Come prepared to share. Show your work. One person talking at a time. Lids down during presentations. Have fun. Learn by making mistakes. 
                 </p>
 
-                <h2 id="schedule" class="content-subhead">Schedule</h2>
+                <h2 id="schedule" class="content-subhead">Week by week</h2>
                 {{#each classes}}
-                    <h3>{{ title }}</h3>
-                    <p>{{ description }}</p>
+                    <h3><a href="{{ href }}">{{ title }}</a></h3>
+                    <p class="date">{{ date }}</p>
+                    <p class="description">{{ description }}</p>
+                    <h3>Links:</h3>
                     <ul class="links">
                     {{#each links}}
-                        <li><a href="{{ href }}">{{ title }}</a></li>
+                        <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
+                    {{/each}}
+                    </ul>
+                    <h3>Assignments:</h3>
+                    <ul class="assignments">
+                    {{#each assignments}}
+                        <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
                     {{/each}}
                     </ul>
                 {{/each}}
@@ -79,9 +94,8 @@
             </div>
         </div>
     </div>
-    
+
     <script src="/javascripts/vendor/purecss/ui.js"></script>
 
 </body>
 </html>
-
