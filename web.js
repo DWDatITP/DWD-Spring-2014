@@ -13,7 +13,7 @@ var express = require('express'),
 var classDataFile = __dirname + '/data/classData.json';
 var classData = jsonfile.readFileSync(classDataFile);
 
-// app = express
+// app = express, naturally
 var app = express();
 
 // tell the app where our views and static things live
