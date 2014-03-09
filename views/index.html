@@ -18,6 +18,7 @@
     <!--[if lt IE 9]>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 <body>
     <div id="layout">
@@ -70,18 +71,18 @@
                     Be on time. Come prepared to share. Show your work. One person talking at a time. Lids down during presentations. Have fun. Learn by making mistakes. 
                 </p>
 
-                <h2 id="schedule" class="content-subhead">Week by week</h2>
+                <h2 id="schedule" class="content-subhead">Class schedule</h2>
                 {{#each classes}}
                     <h3><a href="{{ href }}">{{ title }}</a></h3>
-                    <p class="date">{{ date }}</p>
+                    <h4 class="date">{{ date }}</h4>
                     <p class="description">{{ description }}</p>
-                    <h3>Links:</h3>
+                    <h4>Links:</h4>
                     <ul class="links">
                     {{#each links}}
                         <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
                     {{/each}}
                     </ul>
-                    <h3>Assignments:</h3>
+                    <h4>Assignments:</h4>
                     <ul class="assignments">
                     {{#each assignments}}
                         <li><a href="{{ href }}">{{ title }}</a> - {{ description }}</li>
