@@ -4,12 +4,12 @@
  * Contains structure for the main app
  */
 
-// require all the things
+// require the third-party node modules
 var express = require('express'),
   hbs = require('hbs'),
   jsonfile = require('jsonfile');
 
-// load up the class data
+// load up the class data from the JSON file
 var classDataFile = __dirname + '/data/classData.json';
 var classData = jsonfile.readFileSync(classDataFile);
 
