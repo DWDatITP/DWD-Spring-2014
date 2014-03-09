@@ -4,10 +4,14 @@
  * Contains structure for the main app
  */
 
-// require all the things
+// require the third-party node modules
 var express = require('express'),
   hbs = require('hbs'),
-  classData = require('./lib/classData.js');
+  jsonfile = require('jsonfile');
+
+// load up the class data from the JSON file
+var classDataFile = __dirname + '/data/classData.json';
+var classData = jsonfile.readFileSync(classDataFile);
 
 // app = express
 var app = express();
@@ -28,7 +32,7 @@ app.set('port', process.env.PORT || 3000);
 
 // define us some routes
 app.get('/', function(req, res) {
-  res.render('index', classData.main());
+  res.render('index', classData);
 });
 
 // ready, set, rocket
