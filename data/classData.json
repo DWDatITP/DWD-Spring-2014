@@ -32,7 +32,7 @@
 
     },
     {
-      "title": "Class 1 - Introduction and Node.js Install",
+      "title": "Week 1: Introduction and Node.js Install",
       "date": "March 26",
       "description": "Getting things started",
       "links": [
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "title": "Class 2 - ",
+      "title": "Week 2: HTML/CSS Review, JavaScript Intro, Publish to Heroku ",
       "date": "April 2",
       "description": "",
       "links": [
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "title": "Class 3 - ",
+      "title": "Week 3: Using Node.js with Express",
       "date": "April 9",
       "description": "",
       "links": [
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "title": "Class 4 - ",
+      "title": "Week 4: Using Node.js with Express Part 2: Templates",
       "date": "April 16",
       "description": "",
       "links": [
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "title": "Class 5 - ",
+      "title": "Week 5: Database-driven sites with Node.js using Express and MongoDB",
       "date": "April 23",
       "description": "",
       "links": [
@@ -115,7 +115,7 @@
       ]
     },
     {
-      "title": "Class 6 - ",
+      "title": "Week 6: Special Topics",
       "date": "April 30",
       "description": "",
       "links": [
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "title": "Class 7 - ",
+      "title": "Week 7: Presentations",
       "date": "May 7",
       "description": "",
       "links": [
