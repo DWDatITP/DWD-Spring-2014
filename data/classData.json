@@ -4,8 +4,8 @@
   "sidebarTitle": "DWD @ ITP",
   "classDescription": "<p>This experimental 7-week, 2 point course will provide a framework for learning how to develop and program web applications and will focus on server side development.  Rather than the traditional model of in-class lectures, assignments, projects, and office hours, this course will heavily leverage existing online and offline resources (videos, articles, interactive tutorials, online courses, books, and more) with class time fully devoted to group and individual help sessions.</p> <p>This course will be focused on developing and deploying server side web applications using JavaScript, Node.js with the Express framework, and NoSQL databases on cloud based infrastructure.  Additional topics will include login and session management, web services and APIs, and will lightly touch on front-end web development.</p><p>Prerequisites include Comm Lab Web and Introduction to Computational Media.</p>",
   "instructors": [
-    {"firstName": "Cory", "lastName": "Forsyth", "email": "cory.forsyth@gmail.com"},
-    {"firstName": "Mike", "lastName": "Dory", "email": "mike@dory.me"}
+    {"firstName": "Mike", "lastName": "Dory", "email": "mike@dory.me"},
+    {"firstName": "Cory", "lastName": "Forsyth", "email": "cory.forsyth@gmail.com"}
   ],
   "references": [
     {"title": "Node.js In Action", "author": "", "href": "", "description": "The guts of Node vs. other modern languages."},
@@ -135,7 +135,7 @@
     {
       "title": "Week 7: Presentations",
       "date": "May 7",
-      "description": "Presentations! Each student will demonstrate and explain the app they've built, the technologies used, and the lessons learned."
+      "description": "Presentations! Each student will demonstrate and explain the app they've built, the technologies used, and the lessons learned. "
     }
   ]
 }
