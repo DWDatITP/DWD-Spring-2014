@@ -135,20 +135,7 @@
     {
       "title": "Week 7: Presentations",
       "date": "May 7",
-      "description": "",
-      "links": [
-        {
-          "title": "",
-          "href": ""
-        }
-      ],
-      "assignments": [
-        {
-          "title": "",
-          "href": "",
-          "description": ""
-        }
-      ]
+      "description": "Presentations! Each student will demonstrate and explain the app they've built, the technologies used, and the lessons learned."
     }
   ]
 }
