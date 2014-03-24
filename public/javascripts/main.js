@@ -25,8 +25,10 @@ $( document ).ready(function() {
     // try to match all known 
     if (newHash === '') {
       $('#menu #nav-item-home').addClass(classes);
-    } else if (newHash === '#instructors') {
-      $('#menu #nav-item-instructors').addClass(classes);
+    } else if (newHash === '#course-description') {
+      $('#menu #nav-item-description').addClass(classes);
+    } else if (newHash === '#work') {
+      $('#menu #nav-item-work').addClass(classes);
     } else if (newHash === '#schedule') {
       $('#menu #nav-item-schedule').addClass(classes);
     }
