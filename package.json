@@ -10,7 +10,7 @@
     "express": ">= 3.4.0",
     "express3-handlebars": ">= 0.5.0",
     "hbs": "*",
-    "supervisor": "*",
-    "jsonfile": "~1.1.1"
+    "jsonfile": "~1.1.1",
+    "nodemon": "~1.0.17"
   }
 }
