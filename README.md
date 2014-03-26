@@ -39,4 +39,4 @@ To start the app with Nodemon by hand, do this instead:
 
     ./node_modules/.bin/nodemon web.js
 
-That's it!
+You should then be up and running! As with Node itself, you can quit the process with `ctrl-c`.
