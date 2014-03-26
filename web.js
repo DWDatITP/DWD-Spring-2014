@@ -22,7 +22,8 @@ app.use(express.static(__dirname + '/public'));
 
 // tell the app to rock the handlebars action
 app.set('view engine', 'html');
-app.engine('html', hbs.__express);
+app.set('layout','layout');
+app.engine('html', require('hogan-express'));
 
 // shiny shiny logger
 app.use(express.logger('dev'));
@@ -32,7 +33,12 @@ app.set('port', process.env.PORT || 3000);
 
 // define us some routes
 app.get('/', function(req, res) {
-  res.render('index', classData);
+  res.render('index', {
+      "pageTitle": "DWD at ITP",
+      "pageDescription": "Dynamic Web Development (Server) — Spring 2014",
+      "sidebarTitle": "DWD @ ITP",
+    }
+  );
 });
 
 // ready, set, rocket
