@@ -33,10 +33,10 @@ To start the app with npm/Nodemon (enabling fancy auto-reload action and all tha
 
 If you'd rather just run the server, you can 
 
-    node app.js
+    node web.js
 
 To start the app with Nodemon by hand, do this instead:
 
-    ./node_modules/.bin/nodemon app.js
+    ./node_modules/.bin/nodemon web.js
 
 That's it!
