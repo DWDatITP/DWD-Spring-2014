@@ -6,7 +6,8 @@
 
 // require the third-party node modules
 var express = require('express'),
-  http = require('http');
+  http = require('http'),
+  path = require('path');
 
 // app = express, naturally
 var app = express();
@@ -23,7 +24,11 @@ app.configure(function(){
   app.set('view engine', 'html');
 
   app.set('layout','layouts/default');
-  app.set('partials', {schedule: "partials/schedule"});
+  app.set('partials', {
+    schedule: "partials/schedule"
+  });
+
+  app.enable('view cache');
 
   // shiny shiny logger
   app.use(express.logger('dev'));
