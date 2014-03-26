@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/supervisor web.js"
+    "start": "./node_modules/.bin/nodemon web.js"
   },
   "dependencies": {
     "express": ">= 3.4.0",
