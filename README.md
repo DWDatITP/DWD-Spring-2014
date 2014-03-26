@@ -14,7 +14,7 @@ App notes
 
 This app was built with [Express.js](http://expressjs.com/), and relies on the following dependencies:
 
-- Handlebars
+- [Hogan](https://github.com/vol4ok/hogan-express)
 - [Nodemon](http://nodemon.io/)
 
 
