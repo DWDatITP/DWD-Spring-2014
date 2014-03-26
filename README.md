@@ -15,7 +15,7 @@ App notes
 This app was built with [Express.js](http://expressjs.com/), and relies on the following dependencies:
 
 - Handlebars
-- Supervisor
+- [Nodemon](http://nodemon.io/)
 
 
 ### Installing dependencies
@@ -24,14 +24,10 @@ Everything this app needs should be installable via npm:
 
     npm install
 
-Supervisor will whine about not being installed globally, so if you'd rather to that, you install it thusly:
-
-    npm install -g
-
 
 ### Running the application
 
-To start the app with npm/Supervisor (enabling fancy auto-reload action and all that), just run this:
+To start the app with npm/Nodemon (enabling fancy auto-reload action and all that), just run this:
 
     npm start
 
@@ -39,8 +35,8 @@ If you'd rather just run the server, you can
 
     node app.js
 
-To start the app with Supervisor by hand, do this instead:
+To start the app with Nodemon by hand, do this instead:
 
-    ./node_modules/.bin/supervisor app.js
+    ./node_modules/.bin/nodemon app.js
 
 That's it!
