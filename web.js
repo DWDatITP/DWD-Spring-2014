@@ -5,7 +5,8 @@
  */
 
 // require the third-party node modules
-var express = require('express');
+var express = require('express'),
+  http = require('http');
 
 // app = express, naturally
 var app = express();
@@ -18,9 +19,11 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 
   // tell the app to rock the handlebars action
-  app.set('view engine', 'html');
-  app.set('layout','layout');
   app.engine('html', require('hogan-express'));
+  app.set('view engine', 'html');
+
+  app.set('layout','layouts/default');
+  app.set('partials', {schedule: "partials/schedule"});
 
   // shiny shiny logger
   app.use(express.logger('dev'));
