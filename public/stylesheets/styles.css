@@ -1,7 +1,35 @@
-h4.date { 
-    font-style: italic;
-    font-weight: normal;
-    color: #888;
-    margin: 0;
-    padding: 0;
+div.class-unit {
+    margin: 10px auto 60px auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+    h2.content-subhead {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #EEE;    
+    }
+
+h4 {
+    color: #CCC;
+}
+    h4.date { 
+        font-style: italic;
+        font-weight: normal;
+        color: #888;
+        margin: 0;
+        padding: 0;
+        font-size: .9em;
+    }
+
+a {
+    color: #00A0FC;
+    text-decoration: none;
+}
+a:visited {
+    color: #00A0FC;
+}
+a:hover {
+    text-decoration: underline;
 }
