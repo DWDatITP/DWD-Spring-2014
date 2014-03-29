@@ -6,8 +6,7 @@
 
 // require the third-party node modules
 var express = require('express'),
-  http = require('http'),
-  path = require('path');
+  exphbs  = require('express3-handlebars');
 
 // app = express, naturally
 var app = express();
@@ -19,15 +18,23 @@ app.configure(function(){
   app.set('views', __dirname + '/views');
   app.use(express.static(__dirname + '/public'));
 
-  // tell the app to rock the handlebars action
-  app.engine('html', require('hogan-express'));
-  app.set('view engine', 'html');
+  // Create `ExpressHandlebars` instance with a default layout.
+  // nb. all extensions are .html, because that seems nicer
+  hbs = exphbs.create({
+    defaultLayout: 'default',
+    extname: '.html',
 
-  app.set('layout','layouts/default');
-  app.set('partials', {
-    schedule: "partials/schedule"
+    // partials, son    
+    partialsDir: [
+      'views/partials/'
+    ]
   });
 
+  // tell the app to rock the handlebars action
+  app.engine('html', hbs.engine);
+  app.set('view engine', 'html');
+
+  // cache rules everything around me
   app.enable('view cache');
 
   // shiny shiny logger
