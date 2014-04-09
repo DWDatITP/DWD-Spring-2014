@@ -31,5 +31,8 @@ a:visited {
     color: #00A0FC;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
+    .content a:hover {
+        text-decoration: underline;
+    }
