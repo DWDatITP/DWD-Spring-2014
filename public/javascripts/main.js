@@ -19,20 +19,21 @@ $( document ).ready(function() {
   // check that 
   function updateClassesByHash(newHash) {
     // check and remove old active classes
-    var classes = 'menu-item-divided pure-menu-selected';
-    $('#menu ul li').removeClass(classes);
+    var classes = 'menu-item-divided pure-menu-selected',
+        $menu = $('#menu');
+    $menu.fin('ul li').removeClass(classes);
 
     // try to match all known 
     if (newHash === '') {
-      $('#menu #nav-item-home').addClass(classes);
+      $menu.find('#nav-item-home').addClass(classes);
     } else if (newHash === '#course-description') {
-      $('#menu #nav-item-description').addClass(classes);
+      $menu.find('#nav-item-description').addClass(classes);
     } else if (newHash === '#work') {
-      $('#menu #nav-item-work').addClass(classes);
+      $menu.find('#nav-item-work').addClass(classes);
     } else if (newHash === '#schedule') {
-      $('#menu #nav-item-schedule').addClass(classes);
+      $menu.find('#nav-item-schedule').addClass(classes);
     }
-  
+
   }
 
 
