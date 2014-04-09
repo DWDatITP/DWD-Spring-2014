@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
   // make sure the browser supports onhashchange
   if ("onhashchange" in window) {
