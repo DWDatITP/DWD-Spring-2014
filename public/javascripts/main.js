@@ -21,7 +21,7 @@ $( document ).ready(function() {
     // check and remove old active classes
     var classes = 'menu-item-divided pure-menu-selected',
         $menu = $('#menu');
-    $menu.fin('ul li').removeClass(classes);
+    $menu.find('ul li').removeClass(classes);
 
     // try to match all known 
     if (newHash === '') {
